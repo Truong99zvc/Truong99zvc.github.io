@@ -19,7 +19,7 @@ Trang web portfolio cá nhân của Truong Phuc Truong (AI/ML Engineer & Compute
 - `README.md`: mô tả dự án.
 - `LICENSE`: giấy phép.
 
-## Xem local
+## Xem cục bộ
 Mở trực tiếp `index.html` bằng trình duyệt.
 
 ## Tùy chỉnh nhanh
