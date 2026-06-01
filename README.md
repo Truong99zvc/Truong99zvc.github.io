@@ -1,31 +1,31 @@
 # Truong Phuc Truong — Portfolio
 
-Trang web portfolio cá nhân của Truong Phuc Truong (AI/ML Engineer & Computer Vision Researcher),
-được triển khai bằng GitHub Pages.
+Personal portfolio website for Truong Phuc Truong (AI/ML Engineer & Computer Vision Researcher),
+deployed with GitHub Pages.
 
-## Nội dung chính
-- Phần đầu trang (hero) giới thiệu nhanh và lời mời liên hệ.
-- About + kỹ năng chuyên môn.
-- Dự án tiêu biểu (Computer Vision, Video Frame Interpolation, LLM Hallucination Detection).
-- Học vấn & chứng chỉ.
-- Thông tin liên hệ (Email, Phone, LinkedIn, GitHub).
+## Highlights
+- Hero section with a quick intro and contact call-to-action.
+- About section with skills and technical stack.
+- Featured projects (Computer Vision, Video Frame Interpolation, LLM Hallucination Detection).
+- Education and certificates.
+- Contact links (Email, Phone, LinkedIn, GitHub).
 
-## Công nghệ
-- HTML, CSS, JavaScript thuần (single-page).
-- Hiệu ứng con trỏ, scroll reveal, highlight menu theo section.
+## Tech stack
+- Plain HTML, CSS, and JavaScript (single page).
+- Custom cursor, scroll-reveal animations, and active nav highlighting.
 
-## Cấu trúc thư mục
-- `index.html`: toàn bộ nội dung + style + script.
-- `README.md`: mô tả dự án.
-- `LICENSE`: giấy phép.
+## Repository structure
+- `index.html`: all content, styles, and scripts.
+- `README.md`: project overview.
+- `LICENSE`: license information.
 
-## Xem cục bộ
-Mở trực tiếp `index.html` bằng trình duyệt.
+## View locally
+Open `index.html` directly in a browser.
 
-## Tùy chỉnh nhanh
-- Chỉnh nội dung, dự án và liên hệ trong `index.html`.
-- Tùy biến màu sắc ở phần biến CSS trong `:root`.
-- Cập nhật link mạng xã hội ở phần Contact.
+## Quick customization
+- Update content, projects, and contact info in `index.html`.
+- Adjust theme colors via the CSS variables in `:root`.
+- Update social links in the Contact section.
 
 ## License
-Theo nội dung trong file `LICENSE`.
+See `LICENSE`.
