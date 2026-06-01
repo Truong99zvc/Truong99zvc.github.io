@@ -4,7 +4,7 @@ Trang web portfolio cá nhân của Truong Phuc Truong (AI/ML Engineer & Compute
 được triển khai bằng GitHub Pages.
 
 ## Nội dung chính
-- Hero giới thiệu nhanh và lời mời liên hệ.
+- Phần đầu trang (hero) giới thiệu nhanh và lời mời liên hệ.
 - About + kỹ năng chuyên môn.
 - Dự án tiêu biểu (Computer Vision, Video Frame Interpolation, LLM Hallucination Detection).
 - Học vấn & chứng chỉ.
