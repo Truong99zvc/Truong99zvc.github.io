@@ -1,86 +1,67 @@
-# Developer Portfolio Template 🚀
+# Truong Truong Phuc — AI Engineer Portfolio 🚀
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+This repository contains the source code and production build for my personal portfolio website, hosted on GitHub Pages at [https://Truong99zvc.github.io](https://Truong99zvc.github.io).
 
-## What is this?
+## 📁 Repository Branch Structure
 
-This simple portfolio template is designed to showcase your past projects, career history, skill sets, and more.
+To host a React application on a GitHub **User Page** (`username.github.io`), the repository is structured into two separate branches:
 
-View the [Demo](https://yujisatojr.github.io/react-portfolio-template/).
+1. **`source` branch** (Default Development Branch):
+   - Contains the raw React, TypeScript, and SCSS source code.
+   - All edits, updates, and local tests are performed on this branch.
+2. **`main` branch** (Production Deployment Branch):
+   - Contains only the static build assets (compiled HTML, CSS, JS) generated from the `build` folder.
+   - GitHub Pages serves the website directly from the root of this branch.
+   - **Do not edit files on the `main` branch manually**, as it is automatically overwritten during deployment.
 
-**This template is free to use, and no attribution is required.** You can fork or download this repository to customize it for your own use. Please don't forget to leave a ⭐ if you like this portfolio!
+---
 
-![screenshot](./src/assets//images/screenshot.png)
+## 🛠️ Local Development Setup
 
-## Features
+To make modifications or test changes locally, ensure you are on the `source` branch:
 
-✅ Open source (free to use, no attribution required)  
-✅ Responsive design & mobile-friendly  
-✅ Supports both dark and light modes  
-✅ Highly customizable multi-component layout  
-✅ Built with modern technologies (React, TypeScript, JavaScript, and SCSS)  
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Quick Setup
+2. **Start the local development server**:
+   ```bash
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view and test the application in your browser.
 
-1. Ensure you have [Node.js](https://nodejs.org/) installed. Check your installation by running:
+---
 
-    ```bash
-    node -v
-    ```
+## 🚀 How to Deploy Updates
 
-2. In the project directory, install dependencies:
+Whenever you make changes to the portfolio (e.g., updating experiences, adding new projects, changing styles), follow these simple steps to deploy:
 
-    ```bash
-    npm install
-    ```
+### Step 1: Deploy to Production (`main` branch)
+Run the automated deployment script:
+```bash
+npm run deploy
+```
+**What this script does automatically**:
+1. Compiles the React code (`npm run build`).
+2. Force-pushes the contents of the generated `build/` folder directly to the root of the `main` branch using the `gh-pages` library.
+3. Your website at [https://Truong99zvc.github.io](https://Truong99zvc.github.io) will update automatically within 1-2 minutes.
 
-3. Start the development server:
+### Step 2: Save Source Code Changes (`source` branch)
+Save your React source code modifications to GitHub:
+```bash
+git add .
+git commit -m "Update portfolio experience/projects"
+git push origin source
+```
 
-    ```bash
-    npm start
-    ```
+---
 
-4. Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
+## 📂 Project Structure
 
-5. Customize the template by navigating to the `/src/components` directory. Modify texts, pictures, and other information as needed.
-
-The page will reload if you make edits, and you will see any lint errors in the console.
-
-If you are interested in creating a mockup image like the ones from the personal projects section, I recommend [Genmoo](https://gemoo.com/tools/browser-mockup-generator/). This website lets you generate sleek looking browser mockups for free.
-
-## Deployment
-
-You can choose your preferred service (e.g., [Netlify](https://www.netlify.com/), [Render](https://render.com/), [Heroku](https://www.heroku.com/)) for deployment. One of the easiest ways to host this portfolio is using GitHub Pages. Follow the instructions below for a production deploy.
-
-1. **Set Up GitHub Repository**
-
-    Create a new repository on GitHub for your portfolio app.
-
-2. **Configure `package.json`**
-
-    Edit the following properties in your `package.json` file:
-
-    ```json
-    {
-        "homepage": "https://yourusername.github.io/your-repo-name",
-        "scripts": {
-            "predeploy": "npm run build",
-            "deploy": "gh-pages -d build",
-            ...
-        }
-    }
-    ```
-
-    Replace `yourusername` with your GitHub username and `your-repo-name` with the name of your GitHub repository.
-
-3. **Deploy to GitHub Pages**
-
-    Run the following command to deploy your app:
-
-    ```bash
-    npm run deploy
-    ```
-
-4. **Access Your Deployed App**
-
-    After successfully deploying, you can access your app at `https://yourusername.github.io/your-repo-name`.
+Edits can be made by navigating to the `/src` directory:
+- `/src/components/Main.tsx`: Hero section, name, and social links.
+- `/src/components/Expertise.tsx`: Technical skills categorization and tag chips.
+- `/src/components/Timeline.tsx`: Education background and career history.
+- `/src/components/Project.tsx`: Portfolio projects list (descriptions, icons, mock images).
+- `/src/components/Contact.tsx` & `/src/index.scss`: Contact form layout and global styling.
